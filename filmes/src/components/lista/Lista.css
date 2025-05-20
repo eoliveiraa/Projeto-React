@@ -57,6 +57,13 @@
     border-bottom: solid 1px #73061b20;
 }
 
+.botaoExcluir {
+    cursor: pointer;
+    background-color: white;
+    border: none;
+
+}
+
 
 @media screen and (max-width: 768px) {
 
