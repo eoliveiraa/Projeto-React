@@ -34,12 +34,18 @@ const Lista = (props) => {
                                         {item.nome}
                                     </td>
                                     <td data-cell="Gênero" style={{ display: props.visivel }}>Ação</td>
-                                    <td data-cell="Editar"><img src={Editar} alt="Caneta" /></td>
 
-                                    <button onClick={()=>(props.funcExcluir(item))} className="botaoExcluir">
+                                    <td data-cell="Editar">
+                                        <button onClick={() => { props.funcEditar(item) }} className="botaoExcluirEditar">
+                                            <img src={Editar} alt="Caneta" />
+                                        </button>
+                                    </td>
 
-                                        <td data-cell="Excluir" ><img src={Excluir} alt="Lixeira" /></td>
-                                    </button>
+                                    <td data-cell="Excluir" >
+                                        <button onClick={() => (props.funcExcluir(item))} className="botaoExcluirEditar">
+                                            <img src={Excluir} alt="Lixeira" />
+                                        </button>
+                                    </td>
 
                                 </tr>
 
